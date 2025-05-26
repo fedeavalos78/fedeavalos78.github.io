@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel=stylesheet href=../CSS/index.css>
+        <style>
+        /*ESTIRAR TIENDA AL MAX DE LA PANTALLA AUNQUE NO HAYA CONTENIDO*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex: 1;
+}
+
+    </style>
+
 </head>
 <body>
     <header> <!-- INICIO HEADER-->
@@ -30,24 +54,25 @@
             </ul>
         </nav>   
        </header>  <!-- FIN HEADER-->
-    <main>
+    <main style="display: flex;">
         <section class="contacto">
-            <article>
-                <h3>Los Cuentos de Nico</h3>
-                <h5>Seguinos en nuestras redes</h5>
-            </article>
-            <article>
+            <article class="contacto__content">
                 <div>
-                    <H3>Contrataciones</H3>
-                    <p>Si estas interesado en contratar a Nico comunicate a través de nuestras redes sociales o escribinos por whatsapp</p>
+                    <H3 class="contacto__title">CONTRATACIONES</H3>
+                    <p class="contacto__text">Si estas interesado en contratar a Nico comunicate a través de nuestras redes sociales o escribinos por whatsapp</p>
                 </div>
             </article>
-            <article class="iconos__redes">
-                <img src="../iconos/iconoir--instagram.svg" alt="IG" width="70" height="70">
-                <img src="../iconos/mingcute--facebook-line.svg" alt="FB" width="70" height="70">
-                <img src="../iconos/mingcute--whatsapp-line.svg" alt="WA" width="70" height="70">
-                <img src="../iconos/mingcute--youtube-line.svg" alt="YT" width="70" height="70">
-            </article>
+            <section>
+                <article class="redes__contenedor">
+                    <img class="iconos" src="../iconos/iconoir--instagram.svg" alt="IG" width="50" height="50">
+                    <img class="iconos" src="../iconos/mingcute--facebook-line.svg" alt="FB" width="50" height="50">
+                    <img class="iconos" src="../iconos/mingcute--whatsapp-line.svg" alt="WA" width="50" height="50">
+                    <img class="iconos" src="../iconos/mingcute--youtube-line.svg" alt="YT" width="50" height="50"">
+                </article>
+                <article class="redes__text">
+                    <h5 class="contacto__text">No te olvides de seguirnos en nuestras redes</h5>
+                </article>
+            </section>
         </section>
     </main>
 <footer class="footer navbar">
