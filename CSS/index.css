@@ -230,7 +230,7 @@ footer {
     font-family: var(--alt-font);
     font-size: var(--font-jumbo);
     font-weight: 500;
-    padding: var(--spacing-36);
+    padding-bottom: var(--spacing-36);
     color: var(--light-font-solid);
 }
 
