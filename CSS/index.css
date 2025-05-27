@@ -276,16 +276,14 @@ footer {
 /* PAGES/CONTACTO/*/
 .contacto{
     height: 100%;
-    padding: var(--spacing-20);
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: space-between;
     flex-grow: 1;
 
 }
 .contacto__title {
-    font-family: var(--alt-font);
+    font-family: var(--base-font);
     font-size: var(--font-large);
     font-weight: 500;
     padding: var(--spacing-12);
@@ -300,12 +298,17 @@ footer {
     padding-bottom: var(--spacing-20);  
 }
 
+.contacto__content {
+    padding: var(--spacing-20);
+}
+.redes {
+    padding: var(--spacing-20);
+}
 .redes__contenedor {
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
-
 }
 
 .redes__text {
@@ -313,13 +316,46 @@ footer {
     justify-content: center;
     align-items: center;
     justify-content: center;
+    padding: 15px;
+    font-size: var(--font-medium);
+    font-family: var(--alt-font);
+    font-weight: 500;
+    padding: var(--spacing-12);
+    padding-bottom: var(--spacing-20);  
 }
-
 
 
 /* PAGES/PRESENTACIONES*/
 
+.presentacion {
+    position: relative;
 
+}
+
+.presentacion__description {
+    position: absolute;
+    padding: 20px;
+}
+
+.presentacion__title {
+    font-family: var(--alt-font);
+    font-size: var(--font-large);
+    font-weight: 500;
+    padding: var(--spacing-12);
+    color: var(--light-font-solid);
+}
+
+.presentacion__text {
+    font-size: var(--font-medium);
+    font-family: var(--alt-font);
+    font-weight: 300;
+    padding: var(--spacing-12);
+        color: var(--light-font-solid);
+}    
+
+.main__presentacion {
+    background-color: var(--light-bg-solid);
+}
 
 
 
